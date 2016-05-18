@@ -11,6 +11,7 @@ function FindProxyForURL(url, host) {
 		isInNet(host, "172.0.0.0",  "255.0.0.0") ||
 		isInNet(host, "192.168.0.0",  "255.255.0.0") ||
 		dnsDomainIs(host, ".sina.com.cn") ||
+		dnsDomainIs(host, ".baidu.com") ||
 		isInNet(host, "127.0.0.0", "255.255.255.0")) {
 			return "DIRECT";
 		}
